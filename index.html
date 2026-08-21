@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NOVA — Agence créative digitale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <a href="#top" class="logo">NOVA<span class="logo-dot">.</span></a>
+  <nav class="main-nav">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Démarrer un projet</a>
+  <button class="nav-burger" aria-label="Ouvrir le menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <p class="eyebrow reveal">Studio digital premium</p>
+    <h1 class="hero-title">
+      <span class="line reveal">Look Premium.</span>
+      <span class="line reveal">Sell Better.</span>
+    </h1>
+    <p class="hero-sub reveal">Not just beautiful, built to convert. Nous concevons des sites, marques et expériences digitales d'exception.</p>
+    <div class="hero-actions reveal">
+      <a href="#contact" class="btn btn-primary">Démarrer un projet</a>
+      <a href="#work" class="btn btn-ghost">Voir nos réalisations</a>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"><i></i></div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="section-head">
+      <p class="eyebrow reveal">Qui sommes-nous</p>
+      <h2 class="reveal">Une agence qui pense produit, design et performance comme un seul métier.</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text reveal">NOVA est une agence digitale premium qui construit des sites, des identités de marque et des expériences web haut de gamme. Nous mêlons direction artistique exigeante, ingénierie front-end soignée et stratégie de conversion pour des marques qui veulent marquer les esprits.</p>
+      <ul class="stat-list">
+        <li class="reveal"><span class="stat-num">120+</span><span class="stat-label">Projets livrés</span></li>
+        <li class="reveal"><span class="stat-num">98%</span><span class="stat-label">Clients satisfaits</span></li>
+        <li class="reveal"><span class="stat-num">12</span><span class="stat-label">Pays clients</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <div class="section-head">
+      <p class="eyebrow reveal">Ce que nous faisons</p>
+      <h2 class="reveal">Des services pensés pour la croissance de votre marque.</h2>
+    </div>
+    <div class="card-grid">
+      <article class="card reveal">
+        <span class="card-num">01</span>
+        <h3>Web Design</h3>
+        <p>Sites et applications sur-mesure, animations soignées, UX orientée conversion.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-num">02</span>
+        <h3>Branding</h3>
+        <p>Identité visuelle, direction artistique et univers de marque cohérent.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-num">03</span>
+        <h3>Développement</h3>
+        <p>Front-end performant, intégrations WebGL, sites rapides et scalables.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-num">04</span>
+        <h3>Stratégie</h3>
+        <p>Positionnement, messaging et parcours pensés pour vendre mieux.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="work" class="section process">
+    <div class="section-head">
+      <p class="eyebrow reveal">Notre méthode</p>
+      <h2 class="reveal">Un process clair, du brief au lancement.</h2>
+    </div>
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="timeline-index">01</span>
+        <div>
+          <h3>Discovery</h3>
+          <p>Immersion dans votre marché, vos objectifs et votre audience.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="timeline-index">02</span>
+        <div>
+          <h3>Design</h3>
+          <p>Direction artistique, wireframes et maquettes haute-fidélité.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="timeline-index">03</span>
+        <div>
+          <h3>Développement</h3>
+          <p>Intégration, animations, tests de performance et d'accessibilité.</p>
+        </div>
+      </li>
+      <li class="reveal">
+        <span class="timeline-index">04</span>
+        <div>
+          <h3>Lancement</h3>
+          <p>Mise en ligne, suivi analytics et optimisation continue.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <p class="eyebrow reveal">Parlons de votre projet</p>
+      <h2 class="reveal">Prêt à passer au niveau supérieur ?</h2>
+    </div>
+    <form class="contact-form reveal" onsubmit="return false;">
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" type="text" placeholder="Votre nom" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="vous@exemple.com" required />
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Parlez-nous de votre projet..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer le message</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <span class="logo">NOVA<span class="logo-dot">.</span></span>
+    <div class="footer-locations">
+      <span>Paris</span><span>Lyon</span><span>Remote</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 NOVA Studio. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
